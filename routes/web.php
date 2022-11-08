@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'index']);
 
+Route::get('/profile/{user}', [\App\Http\Controllers\Profile::class, 'index']);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
