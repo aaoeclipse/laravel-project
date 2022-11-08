@@ -8,7 +8,6 @@ class WelcomeController extends Controller
 {
     public function index(Request $request)
     {
-        ray("hello from controller");
         return view('welcome');
     }
 }

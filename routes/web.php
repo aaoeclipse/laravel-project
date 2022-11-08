@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'index']);
 
 Route::get('/dashboard', function () {
-    ray("hello from router")->blue;
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
