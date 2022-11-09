@@ -7,9 +7,16 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Blog;
 
+
 class Profile extends Controller
 {
-    public function index($user)
+
+    protected function index()
+    {
+        return view('dashboard');
+    }
+
+    public function show($user)
     {
 
         $user = User::find($user);
