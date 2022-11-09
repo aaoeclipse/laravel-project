@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title');
-            $table->text('body');
-            $table->string('image');
-            $table->integer('likes');
+            $table->text('body')->nullable();
+            $table->string('image')->nullable();
+            $table->integer('likes')->default(0);
             $table->foreignId(User::class);
         });
     }
