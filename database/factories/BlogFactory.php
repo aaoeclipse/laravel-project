@@ -19,6 +19,7 @@ class BlogFactory extends Factory
     {
         return [
             'title' => fake()->name(),
+            'subtitle' => fake()->name(),
             'body' => fake()->safeEmail(),
             'image' => fake()->name(),
             'likes' => fake()->randomDigit(),

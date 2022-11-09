@@ -8,7 +8,7 @@
                 <div class="p-4 border-solid border flex justify-between items-center" style="padding: 1rem;">
                     <div>
                         <h3 class="font-bold text-3xl cursor-pointer">{{ $blog['title']}}</h3>
-                        <span class="text-gray-600">subtitle</span>
+                        <span class="text-gray-600">{{ $blog['subtitle']}}</span>
                        </div>
                        <div>
                         <ul class="flex gap-4">
