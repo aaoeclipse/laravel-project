@@ -18,8 +18,7 @@ class Profile extends Controller
 
     public function show($user)
     {
-
-        $user = User::find($user);
+        $user = User::where('username', $user)->first();
         return view('profile', ['user' => $user]);
     }
 }
