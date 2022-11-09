@@ -20,7 +20,7 @@ return new class extends Migration
             $table->text('body')->nullable();
             $table->string('image')->nullable();
             $table->integer('likes')->default(0);
-            $table->foreignId(User::class);
+            $table->foreignIdFor(\App\Models\User::class, 'user_id');
         });
     }
 
