@@ -8,7 +8,7 @@ use App\Models\Blog;
 
 class BlogController extends Controller
 {
-    public function index()
+    public function store()
     {
         return view('blogcreation');
     }

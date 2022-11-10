@@ -11,7 +11,7 @@ use App\Models\Blog;
 class Profile extends Controller
 {
 
-    protected function index()
+    protected function store()
     {
         return view('dashboard');
     }
