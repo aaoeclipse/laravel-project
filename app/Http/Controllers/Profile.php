@@ -6,14 +6,16 @@ use Illuminate\Http\Request;
 
 use App\Models\User;
 use App\Models\Blog;
-
+use Illuminate\Support\Facades\Auth;
 
 class Profile extends Controller
 {
 
     protected function store()
     {
-        return view('dashboard');
+
+        $user = Auth::user();
+        return view('dashboard', ['user' => $user]);
     }
 
     public function show($user)
