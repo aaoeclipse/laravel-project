@@ -15,6 +15,6 @@ class Blog extends Model
         'content',
         'image',
         'likes',
-        'owner',
+        'user_id',
     ];
 }
